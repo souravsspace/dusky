@@ -9,6 +9,9 @@
 # testing
 /coverage
 
+# velite files 
+.velite
+
 # next.js
 /.next/
 /out/
