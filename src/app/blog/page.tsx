@@ -1,7 +1,9 @@
 import { posts } from "#site/content";
 import PostItem from "@/components/PostItem";
+import { sortPosts } from "@/lib/post-fns";
 
 export default async function BlogPage() {
+  const sortedPost = sortPosts(posts.filter((post) => post.isPublished));
   const displayPosts = posts;
 
   return (

@@ -13,9 +13,9 @@ In the vast sea of React, where components swim freely and side-effects lurk in 
 
 Before we set sail, let's ensure we have all the necessary gear:
 
--  **useState:** The worm that tempts your components to the surface.
--  **useEffect:** The lure that attracts side-effects and keeps them at bay.
--  **useContext:** The net that gathers global states together, making it easier to share across your component sea.
+- **useState:** The worm that tempts your components to the surface.
+- **useEffect:** The lure that attracts side-effects and keeps them at bay.
+- **useContext:** The net that gathers global states together, making it easier to share across your component sea.
 
 ## Setting Sail: Your First Catch
 
@@ -24,15 +24,15 @@ With our gear ready, it's time to set sail into the React sea. Here's how to mak
 1. **Bait your hook with useState:** Begin by choosing the right worm. `useState` allows you to add state to your functional components, making them more dynamic and responsive.
 
 ```jsx
-const [fish, setFish] = useState("🐟")
+const [fish, setFish] = useState("🐟");
 ```
 
 2. **Attract with useEffect:** Now, use `useEffect` as your lure. This Hook lets you perform side effects in your components, such as fetching data or subscribing to services. It's like casting your line into the water and waiting for a bite.
 
 ```jsx
 useEffect(() => {
-   console.log(`You've caught ${fish}!`)
-}, [fish])
+  console.log(`You've caught ${fish}!`);
+}, [fish]);
 ```
 
 3. **Gather with useContext:** Finally, use `useContext` as your net. This Hook lets you share state across many components without prop drilling. It's like gathering all your catches in one net for a bountiful harvest.
