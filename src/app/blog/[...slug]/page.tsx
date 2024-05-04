@@ -1,7 +1,7 @@
+import "@/styles/mdx.css";
 import { posts } from "#site/content";
 import { MdxContent } from "@/components/Mdx";
 import { notFound } from "next/navigation";
-import React from "react";
 
 type Props = {
   params: {
@@ -28,7 +28,7 @@ export default async function PostPage({ params }: Props) {
   if (!post || !post.isPublished) notFound();
   return (
     <article className="prose dark:prose-invert container mx-auto max-w-3xl py-6">
-      <h2 className="mb-2">{post.title}</h2>
+      <h2 className="mb-2 text-3xl sm:text-5xl">{post.title}</h2>
       <div className="mb-2 flex gap-2">
         {/* {post.tags?.map((tag) => <Tag tag={tag} key={tag} />)} */}
       </div>

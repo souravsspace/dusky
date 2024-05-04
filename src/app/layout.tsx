@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
-import { Inter as FontSans } from "next/font/google";
-import "./globals.css";
+import "@/styles/globals.css";
 import { cn } from "@/lib/utils";
-import Navbar from "@/components/navigation/Navbar";
+import type { Metadata } from "next";
 import Footer from "@/components/Footer";
+import Navbar from "@/components/navigation/Navbar";
+import { Inter as FontSans } from "next/font/google";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 
 const font = FontSans({
@@ -22,7 +22,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-pt-16">
       <ThemeProvider
         attribute="class"
         defaultTheme="system"
